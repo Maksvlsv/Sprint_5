@@ -30,7 +30,10 @@ class FelineTest {
 
     @Test
     void testGetKittensDefault() {
-        assertEquals(1, feline.getKittens(), "Проверка количества котят по умолчанию");
+        int defaultKittensCount = 1;
+        int actualKittensCount = feline.getKittens();
+
+        assertEquals(defaultKittensCount, actualKittensCount, "Проверка количества котят по умолчанию");
     }
 
     @Test
